@@ -1,6 +1,6 @@
-const API_KEY = 'Ваш_API_ключ';
-const SPREADSHEET_ID = 'ID_Вашей_таблицы';
-const RANGE = 'Лист1!A1:Z100'; // Укажите диапазон
+const API_KEY = 'AIzaSyBmSkNijS0qEa9j8ZrvFItYggN_FgXe5jg';
+const SPREADSHEET_ID = '1Z6MkmyCU_xELc_riP_xeCRzXr4rNhTQ2pyjwQ0ZcGYk';
+const RANGE = 'Phys!A1:Z100'; // Укажите диапазон
 
 fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`)
     .then(response => response.json())
