@@ -39,11 +39,11 @@ fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${
 
                 // Изменение цвета шрифта для соответствия условиям 2
                 if (colIndex % 2 === 0 && rowIndex >= 9 && rowIndex <= 39) {
-                    if (rowIndex > 5) {
-                        td.classList.add('yellow-text');
-                    }
                     if (rowIndex > 6) {
                         td.classList.add('green-text');
+                    }
+                    if (rowIndex > 5) {
+                        td.classList.add('yellow-text');
                     }
                 }
 
