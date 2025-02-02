@@ -1,3 +1,4 @@
+/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -22,11 +23,39 @@ th, td {
     text-align: left;
 }
 
+/* Закрепленный первый столбец */
+th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f8f8f8;
+    z-index: 10;
+}
+
+/* Стиль заголовков */
 th {
     background-color: #555;
     color: white;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* Цвета для строк */
+.brown-text {
+    color: brown;
+}
+
+.red-text {
+    color: red;
+}
+
+/* Четные столбцы */
+.green-text {
+    color: green;
+}
+
+.yellow-text {
+    color: yellow;
+}
+
+/* Нечетные столбцы */
+.grey-bg {
+    background-color: #eee;
 }
